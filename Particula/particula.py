@@ -7,7 +7,7 @@ class particula:
         self.massa=massa
 
     def newton(self,fx,fy,dt):
-        # ax=F/m
+        # ax=F/m (cálculo de aceleração)
         ax=fx/self.massa
         ay=fy/self.massa
         # vx=v0+a*t
@@ -16,5 +16,8 @@ class particula:
         # x=x0+v*dt
         self.x+=self.vx*dt
         self.y+=self.vy*dt
+
+    #def posicao(self):
+    #    return (self.x, self.y)    
 
             
