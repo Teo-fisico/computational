@@ -41,6 +41,7 @@ class particula:
         plt.ylabel('y (m)')
         plt.title('Trajetória da Partícula')
         plt.grid(True)
+        #plt.savefig('Simulação.png',dpi=300)
         plt.show()
      
     
