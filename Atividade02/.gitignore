@@ -1,0 +1,32 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependências
+node_modules/
+venv/
+.env
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# IDEs/editores
+.idea/
+.vscode/
+*.swp
+
+# Arquivos de backup
+*.bak
+*.tmp
+
+# Testes
+coverage/
+
+# Outros
+*.pyc
+__pycache__/

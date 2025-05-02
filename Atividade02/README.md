@@ -1,0 +1,1 @@
+O código contem duas planilhas as quais são sincronizadas(particula.py e exemplo01.py). A primeira tem classes  
