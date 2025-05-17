@@ -15,5 +15,5 @@ def grad(outputs, inputs):
 
 
 def lei_esfri(time, Tamb, T0, k):
-    T = Tamb + (T0 - Tamb) * np.exp(-k * time)
+    T = Tamb+(T0-Tamb)*np.exp(-k*time)
     return T
