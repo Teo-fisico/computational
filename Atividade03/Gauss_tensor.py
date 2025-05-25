@@ -6,8 +6,9 @@ import matplotlib.pyplot as plt
 np.random.seed(42)
 tf.random.set_seed(42)
 
-x_train = np.linspace(0, 2 * np.pi, 100).reshape(-1, 1)
-y_train = np.sin(x_train)
+x_train = np.linspace(-10, 10, 100).reshape(-1, 1)
+sigma=0.8
+y_train = np.exp(-x_train**2/(2*sigma**2))
 noise = 0.1 * np.random.randn(*y_train.shape)
 y_train_noisy = y_train + noise
 
@@ -22,8 +23,8 @@ model.compile(optimizer='adam', loss='mse')
 model.fit(x_train, y_train_noisy, epochs=1000, verbose=0)
 
 # 3. Generar datos de prueba
-x_test = np.linspace(0, 3 * np.pi, 100).reshape(-1, 1)
-y_test = np.sin(x_test)
+x_test = np.linspace(-11, 11, 100).reshape(-1, 1)
+y_test = np.exp(-x_test**2/(2*sigma**2))
 
 # 4. Realizar predicciones
 y_pred = model.predict(x_test)
@@ -34,12 +35,12 @@ test_mse = mse(y_test, y_pred).numpy()
 print(f"Test MSE: {test_mse:.4f}")
 
 plt.figure(figsize=(10, 5))
-plt.plot(x_test, y_test, label='Verdadeiro sen(x)', linewidth=2)
+plt.plot(x_test, y_test, label='Verdadeiro Gaussiana', linewidth=2)
 plt.plot(x_test, y_pred, label='Predição', linestyle='--')
 plt.scatter(x_train, y_train_noisy, label=' Dados de Treinamento com ruído', color='red', s=10)
-plt.title('Aproximación de sen(x) con FCNN (tanh) - TensorFlow')
+plt.title('Aproximación de exp(-x^2/(2*s^2)) con FCNN (tanh) - TensorFlow')
 plt.xlabel('x')
-plt.ylabel('sen(x)')
+plt.ylabel('exp(-x^2/(2*s^2))')
 plt.legend()
 plt.grid(True)
 plt.savefig('sen_tensor.png', dpi=300)
