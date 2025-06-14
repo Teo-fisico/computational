@@ -1,6 +1,6 @@
 
 # 📘 PF010-Física Computacional 
-### Prof. Dr. Gerson J. Ferreira
+### Docente: Prof. Dr. Gerson J. Ferreira
 
 ## 🎯 Objetivo
 
