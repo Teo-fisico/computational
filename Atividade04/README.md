@@ -59,8 +59,12 @@ $\frac{dT}{dt}=-k(T-T_a)$
 
 A solução analítica é:
 
-$ T(t)=T_a+(T_0-T_a)e^{-kt}$, 
-onde $T_a$: a temperatura de ambiente e $T_0$: a temperatura inicial.
+$ T(t)=T_a+(T_0-T_a)e^{-kt}$, onde $T_a$: a temperatura de ambiente e $T_0$: a temperatura inicial.
+
+A solução particular para $T_a=25°C$ e $T_0=95°C$: 
+
+ $T(t)=25+70e^{-0.005t}$
+
 
 ![Simulação](./image4/sol_anal.png)
 
@@ -68,15 +72,36 @@ onde $T_a$: a temperatura de ambiente e $T_0$: a temperatura inicial.
 
 ---
 
-### 🌊 Equação de Burgers
+### 📊 Geração de Dados de Treinamento
 
-\[
-\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} = \nu \frac{\partial^2 u}{\partial x^2}
-\]
 
-![resultado_pinn_burgers.png](./imagens/resultado_pinn_burgers.png)
 
-> A PINN consegue capturar as não-linearidades e choques da solução de Burgers.
+![resultado-treinamento.png](./image4/Dados.png)
+
+> Solução analítica e geração de 10 dados com ruído Gaussiano para treinamento.
+
+---
+
+### Ajuste dos dados com NN regressão simples
+
+![resulatdo_simples.png](./image4/nna.png)
+
+> Solução analítica, dados de treinamento e regressão simples
+---
+
+### Implementação de PINNs
+
+![implene](./image4/pinn.png)
+
+> Solução analítica e predição usando o PINNs
+
+---
+
+### Predição de constante k usando PINNs
+
+![constante](./image4/valork.png)
+
+> Determinação do valor de constante de resfriamento usando os dados de treinamento. 
 
 ---
 
@@ -88,23 +113,3 @@ onde $T_a$: a temperatura de ambiente e $T_0$: a temperatura inicial.
   [DOI:10.1016/j.jcp.2018.10.045](https://doi.org/10.1016/j.jcp.2018.10.045)
 
 ---
-
-## 🧪 Requisitos (exemplo)
-
-```bash
-pip install torch numpy matplotlib
-
-🧠 Observação
-
-PINNs são especialmente úteis para problemas:
-
-    Mal postos ou inversos
-
-    Com dados incompletos
-
-    Em que soluções numéricas convencionais são caras
-
-
-
-
-
