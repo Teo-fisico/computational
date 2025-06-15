@@ -1,11 +1,32 @@
- Uma classe é um modelo para criar objetos que agrupam dados (atributos) e comportamento (métodos) relacionados. O seguinte código contem duas planilhas as quais são sincronizadas(particula.py e exemplo01.py). 
- 
- A particula é uma classe.
+## 💡 Programação Orientada a Objetos aplicada ao Movimento Parabólico
 
-__init__ é o construtor, chamado quando você cria uma nova particula.
+Este projeto implementa a **simulação do movimento parabólico** utilizando os princípios da **programação orientada a objetos (POO)** em Python. A abordagem modular e orientada a objetos facilita a organização do código, a reutilização de componentes e a expansão futura para simulações mais complexas.
 
-self.x, self.massa, etc. são atributos da particula.
+### 🧱 Estrutura orientada a objetos
 
-newton é um método, ou seja, uma função que pertence à classe.  
+- **Classe `particula`**: representa um objeto na origin de coordenadas, lançado com uma força inicial. Contém atributos como:
+  - `F0` (forçã inicial)
+  - `g` (aceleração da gravidade)
+  - `posicao(t)` – retorna as coordenadas (x, y) no instante `t`
+  -`massa` – massa
+  
+   Métodos 
+  - `_init_(self,x,y,v_x,v_y, massa)`:- construtor da classe que inicializa os atributos da partícula.
+  - `newton(self,f_x,f_y,dt)` – : aplica a segunda lei de Newton para atualizar a velocidade e a posição da partícula com base nas forças (fx, fy) aplicadas e no intervalo de tempo `dt`
 
-exemplo01.py usa as livrerias necessarias e importa a classe particula do arquivo particula.py
+### ⚙️ Funcionalidades
+
+- Cálcula as posições ao longo da trajetória até cair no solo
+- Geração de gráficos da trajetória
+- Fácil modificação de parâmetros físicos (Posição, força, massa, etc.)
+
+### 📉 Resultados
+Usando [ejemplo01.py](ejemplo01.py) e classe [particula.py](particula.py) obtem-se a seguinte figura.  
+
+![Descrição parabolico](Simulação.png)
+
+ > Trajetória oblíquo de um corpo
+
+### 🚀 Objetivo educacional
+
+Este projeto serve como exemplo prático de como aplicar os conceitos de POO (como encapsulamento, abstração e reutilização) à modelagem de fenômenos físicos clássicos. É ideal para estudantes de Física, Engenharia ou Ciência da Computação.
