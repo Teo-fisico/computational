@@ -36,11 +36,11 @@ A função utilizada para teste é uma parábola com mínimo conhecido. O algori
 
 ## 📊 Gráficos incluídos
 
-Os seguintes gráficos foram gerados e estão disponíveis na pasta `docs/`:
+Os seguintes gráficos foram gerados e estão disponíveis na pasta `image1/`:
 
-- **Gráfico de convergência (`convergencia_x.png`)**  
+- **Gráfico de convergência questão 1 (`convergencia_x.png`)**  
   Mostra como o valor de `x` se aproxima do mínimo ao longo das iterações.  
-  ![Gráfico de convergência](docs/convergencia_x.png)
+  ![Gráfico de convergência](image1/alfame.png)
 
 - **Gráfico da descida na função (`descida_funcao.png`)**  
   Mostra o caminho percorrido pelo algoritmo sobre a curva da função.  
