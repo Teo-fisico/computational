@@ -48,12 +48,43 @@ Os seguintes gráficos foram gerados e estão disponíveis na pasta `image1/`:
 
 ---
 - **Gráfico de convergência de questão 2**
-Na seguinte figura mostra-se a convergência devagar
+
+Na seguinte figura mostra-se a convergência devagar, para um ponto inicial cerca do máximo global e uma taxa $\alpha=0,1$.
 ![Gráfico de convergência](./image1/q21.png)
+
+Para o mesmo ponto inicial e uma taxa de aprendizado maior não converge e dá como resultado errado (ao máximo global). 
 
 ![Gráfico de convergência](./image1/q21b.png)
 
+
+Para um ponto inicial $x=2$ e uma taxa de aprendizado $\alpha=0,1$ a convergência é rápida.
 ![Gráfico de convergência](./image1/q21c.png)
 
+Na mesma concição inical e taxa maior converge no mínimo do lado oposto. 
+
 ![Gráfico de convergência](./image1/q21d.png)
+
+
+Para determinar o valor mínimo global depende de taxa de aprendizado e ponto inicial. 
+
 ---
+
+- **Gráfico de convergência de questão 3**
+
+As figuras mostram-se as convergências dos mínimos dependentes do taxa de aprendizado.
+
+
+![Gráfico de convergência](./image1/31.png)
+
+![Gráfico de convergência](./image1/32.png)
+
+---
+- **Gráfico de convergência de questão 4**
+
+Na seguinte figura também apresenta-se a dependência da taxa de aprendizado e ponto inicial para converger a um mínimo local ou global.
+
+![Gráfico de convergência](./image1/min_glo.png)
+
+Finalmente, a figura mostra a convergência em função de épocas e existendo uma estabilidade para maiores que época=20. 
+
+![Gráfico de convergência](./image1/conv.png)
