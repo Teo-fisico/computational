@@ -24,7 +24,7 @@ $$
 
 ---
 
-## 🧪 Resultados
+## 📉 Resultados
 
 A função utilizada para teste é uma parábola com mínimo conhecido. O algoritmo foi executado com diferentes taxas de aprendizado, e observou-se que:
 
@@ -47,6 +47,3 @@ Os seguintes gráficos foram gerados e estão disponíveis na pasta `docs/`:
   ![Gráfico da descida](docs/descida_funcao.png)
 
 ---
-
-## 📁 Estrutura do projeto
-
