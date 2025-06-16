@@ -4,11 +4,11 @@ Este projeto implementa a **simulação do movimento parabólico** utilizando os
 
 ### 🧱 Estrutura orientada a objetos
 
-- **Classe `particula`**: representa um objeto na origin de coordenadas, lançado com uma força inicial. Contém atributos como:
-  - `F0` (forçã inicial)
-  - `g` (aceleração da gravidade)
+- **Classe `particula`**: representa um objeto na origem de coordenadas, lançado com uma força inicial. Contém atributos como:
   - `posicao(t)` – retorna as coordenadas (x, y) no instante `t`
-  -`massa` – massa
+  - `F0` (forçã inicial) da forma `(0,fy)`
+  - `g` (aceleração da gravidade)
+   -`massa` – massa
   
    Métodos 
   - `_init_(self,x,y,v_x,v_y, massa)`:- construtor da classe que inicializa os atributos da partícula.
@@ -16,7 +16,7 @@ Este projeto implementa a **simulação do movimento parabólico** utilizando os
 
 ### ⚙️ Funcionalidades
 
-- Cálcula as posições ao longo da trajetória até cair no solo
+- Calcula as posições ao longo da trajetória até cair no solo
 - Geração de gráficos da trajetória
 - Fácil modificação de parâmetros físicos (Posição, força, massa, etc.)
 
