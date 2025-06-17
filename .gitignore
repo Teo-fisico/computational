@@ -1,0 +1,76 @@
+# Arquivos e pastas Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+*.egg
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Diretórios de ambiente virtual
+env/
+ENV/
+.venv/
+venv/
+.ENV/
+.env/
+
+# Arquivos de configuração pessoais
+.env
+*.env
+
+# Arquivos de dados temporários
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.json
+*.pickle
+*.pkl
+*.joblib
+
+# Arquivos de modelos treinados
+*.h5
+*.hdf5
+*.ckpt
+*.pt
+*.pth
+*.pb
+*.tflite
+*.onnx
+model/
+models/
+checkpoints/
+runs/  # para TensorBoard
+
+# TensorFlow events
+events.out.tfevents.*
+
+# Diretórios de build
+build/
+dist/
+*.manifest
+
+# Notebooks Jupyter
+.ipynb_checkpoints/
+
+# Arquivos temporários do Jupyter
+*.nbconvert.ipynb
+
+# Arquivos de cache pip e setuptools
+pip-wheel-metadata/
+__pycache__/
+*.whl
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
