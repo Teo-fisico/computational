@@ -95,3 +95,43 @@ As **Redes Neurais Artificiais (RNAs)** são modelos computacionais inspirados n
 - **Suporte a GPU/TPU**: paralelização e aceleração automática.
 - **Ferramentas adicionais**: TensorBoard (visualização), TensorFlow Lite (mobile), TensorFlow.js (web), TF-Serving (deploy).
 ---
+# Resultados
+## Usando Pytorch
+
+![implseno](./image3/seno_pytor.png)
+
+![implene](./image3/coseno_pytor.png)
+
+![impltanene](./image3/tangente_pytor.png)
+
+![implesinne](./image3/sinc_pytor.png)
+
+![gauset](./image3/Gauss_pytor.png)
+
+## Usando Scikit-Learn
+
+![implenesc](./image3/coseno_sci.png)
+
+![implenesec](./image3/seno_sci.png)
+
+![itnetc](./image3/tangente_s.png)
+
+![itnetc](./image3/sinc(x).png)
+
+![gausetc](./image3/Gauss_sci.png)
+
+## Usando Tensorflow
+
+![implene1](./image3/coseno_tensor.png)
+
+![implenetc](./image3/seno_tensor.png)
+
+![imttnetc](./image3/tan_tensor.png)
+
+![imttsinc](./image3/sinc_tensor.png)
+
+![itnegaus](./image3/Gauss_tensor.png)
+
+## Derivadas
+
+![implenede](./image3/deriva_melhorada.png)

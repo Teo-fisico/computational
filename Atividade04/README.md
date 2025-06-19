@@ -53,15 +53,25 @@ $
 
 ## 📊 Resultados
 
-### ❄️ Equação de resfriamento de Newton
+### ❄️ Questão 1. Equação de resfriamento de Newton
 
 $\frac{dT}{dt}=-k(T-T_a)$
 
-A solução analítica é:
+$\int^T_{T_0}\frac{dT'}{T'-T_a}=-k\int^t_{0} dt'$
 
-$ T(t)=T_a+(T_0-T_a)e^{-kt}$, onde $T_a$: a temperatura de ambiente e $T_0$: a temperatura inicial.
+Resolvindo a integral definida:
 
-A solução particular para $T_a=25°C$ e $T_0=95°C$: 
+$\ln\frac{T-T_a}{T_0-T_a}=-kt$
+
+$\frac{T-T_a}{T_0-T_a}=e^{-kt}$
+
+$T-T_a=(T_0-T_a)e^{-kt}$
+
+e finalmente obtem-se
+
+$ T(t)=T_a+(T_0-T_a)e^{-kt}$, onde $T_a$: a temperatura de ambiente e $T_0$: a temperatura inicial do café.
+
+A simulação numérica foi para uma solução particular: $T_a=25°C$ e $T_0=95°C$: 
 
  $T(t)=25+70e^{-0.005t}$
 
@@ -89,7 +99,7 @@ A solução particular para $T_a=25°C$ e $T_0=95°C$:
 > Solução analítica, dados de treinamento e regressão simples
 ---
 
-### Implementação de PINNs
+### Implementação de PINNs para k=0.005 1/s
 
 ![implene](./image4/pinn.png)
 
