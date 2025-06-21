@@ -27,9 +27,11 @@ $L = L_{dado} + \lambda L_{fisica}$
 
 #### 🎯 Termos da perda:
 - **Erro nos dados** (se houver):
-  $L_{dado} = \frac{1}{N_d} \sum_{i=1}^{N_d} |\hat{u}(x_i,t_i) - u_i^{\text{obs}}|^2$
+
+  $L_{dado} = \frac{1}{N_d} \sum_{i=1}^{N_d} |\hat{u}(x_i,t_i) - u_i^{obs}|^2$
 
 - **Erro físico** (resíduo da EDP):
+
   $L_{fisica} = \frac{1}{N_f} \sum_{j=1}^{N_f} \left| \frac{\partial \hat{u}}{\partial t}(x_j,t_j) - \nu \frac{\partial^2 \hat{u}}{\partial x^2}(x_j,t_j) \right|^2$
 
 ---

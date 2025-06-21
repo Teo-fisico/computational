@@ -98,6 +98,8 @@ As **Redes Neurais Artificiais (RNAs)** são modelos computacionais inspirados n
 # Resultados
 ## Usando Pytorch
 
+Oa resultados mostrados foram desenvolvidos usando 3 camadas, com funções de ativação tangente hiperbólico (Tanh) e algoritmo de optimização adam.
+
 ![implseno](./image3/seno_pytor.png)
 
 ![implene](./image3/coseno_pytor.png)
@@ -107,6 +109,7 @@ As **Redes Neurais Artificiais (RNAs)** são modelos computacionais inspirados n
 ![implesinne](./image3/sinc_pytor.png)
 
 ![gauset](./image3/Gauss_pytor.png)
+
 
 ## Usando Scikit-Learn
 
@@ -135,3 +138,5 @@ As **Redes Neurais Artificiais (RNAs)** são modelos computacionais inspirados n
 ## Derivadas
 
 ![implenede](./image3/deriva_melhorada.png)
+
+As figuras apresentadas têm uma melhor aproximação dentro da tolerância considerada e taxa de aprendizado. Além disso, ter muito cuidado com funções não contínuas num determinado domínio: tangente e outros.   
