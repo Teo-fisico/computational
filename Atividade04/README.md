@@ -17,26 +17,20 @@ A ideia principal é treinar uma rede neural $\hat{u}(x,t;\theta)$ que satisfaç
 
 ### 🧩 Defina uma Equação diferencial ordinaria ou Parcial
 
-$
-\frac{\partial u}{\partial t} = \nu \frac{\partial^2 u}{\partial x^2}, \quad x \in \Omega, \ t \in [0,T]$
+$\frac{\partial u}{\partial t} = \nu \frac{\partial^2 u}{\partial x^2}, \quad x \in \Omega, \ t \in [0,T]$
 
 ### 🔧 Rede neural
 
 A rede  $\hat{u}(x,t;\theta)$ é otimizada minimizando a **função de perda total**:
 
-$
-\mathcal{L} = \mathcal{L}_{\text{data}} + \lambda \mathcal{L}_{\text{physics}}
-$
+$\mathcal{L} = \mathcal{L}_{\text{data}} + \lambda \mathcal{L}_{\text{physics}}$
 
 #### 🎯 Termos da perda:
 - **Erro nos dados** (se houver):
-  $
-  \mathcal{L}_{\text{data}} = \frac{1}{N_d} \sum_{i=1}^{N_d} |\hat{u}(x_i,t_i) - u_i^{\text{obs}}|^2
-  $
+  $\mathcal{L}_{\text{data}} = \frac{1}{N_d} \sum_{i=1}^{N_d} |\hat{u}(x_i,t_i) - u_i^{\text{obs}}|^2$
+
 - **Erro físico** (resíduo da EDP):
-  $
-  \mathcal{L}_{\text{physics}} = \frac{1}{N_f} \sum_{j=1}^{N_f} \left| \frac{\partial \hat{u}}{\partial t}(x_j,t_j) - \nu \frac{\partial^2 \hat{u}}{\partial x^2}(x_j,t_j) \right|^2
-  $
+  $\mathcal{L}_{\text{physics}} = \frac{1}{N_f} \sum_{j=1}^{N_f} \left| \frac{\partial \hat{u}}{\partial t}(x_j,t_j) - \nu \frac{\partial^2 \hat{u}}{\partial x^2}(x_j,t_j) \right|^2$
 
 ---
 
@@ -69,7 +63,9 @@ $T-T_a=(T_0-T_a)e^{-kt}$
 
 e finalmente obtem-se
 
-$ T(t)=T_a+(T_0-T_a)e^{-kt}$, onde $T_a$: a temperatura de ambiente e $T_0$: a temperatura inicial do café.
+$ T(t)=T_a+(T_0-T_a)e^{-kt}$
+
+ onde $T_a$: a temperatura de ambiente e $T_0$: a temperatura inicial do café.
 
 A simulação numérica foi para uma solução particular: $T_a=25°C$ e $T_0=95°C$: 
 
