@@ -65,7 +65,7 @@ $T-T_a=(T_0-T_a)e^{-kt}$
 
 e finalmente obtem-se
 
-$ T(t)=T_a+(T_0-T_a)e^{-kt}$
+$T(t)=T_a+(T_0-T_a)e^{-kt}$
 
  onde $T_a$: a temperatura de ambiente e $T_0$: a temperatura inicial do café.
 
@@ -95,6 +95,10 @@ A simulação numérica foi para uma solução particular: $T_a=25°C$ e $T_0=95
 ![resulatdo_simples.png](./image4/nna.png)
 
 > Solução analítica, dados de treinamento e regressão simples
+
+
+As duas regressões considaradas têm uma boa predição ao redor dos pontos de treinamento e fora disso não predice.  
+
 ---
 
 ### Implementação de PINNs para k=0.005 1/s
@@ -103,6 +107,8 @@ A simulação numérica foi para uma solução particular: $T_a=25°C$ e $T_0=95
 
 > Solução analítica e predição usando o PINNs
 
+A predição usando PINNs foi melhor em comparação com regressões.
+
 ---
 
 ### Predição de constante k usando PINNs
@@ -110,6 +116,8 @@ A simulação numérica foi para uma solução particular: $T_a=25°C$ e $T_0=95
 ![constante](./image4/valork.png)
 
 > Determinação do valor de constante de resfriamento usando os dados de treinamento. 
+
+A predição do valor de $k$ usando PINNs foi todo um sucesso com $epoch=40000$, taxa de aprendizado de ordem $10^{-6}$ atingindo o valor de $k=0,0050$ $s^{-1}$.
 
 ---
 

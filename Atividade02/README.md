@@ -14,9 +14,26 @@ Este projeto implementa a **simulação do movimento parabólico** utilizando os
   - `_init_(self,x,y,v_x,v_y, massa)`:- construtor da classe que inicializa os atributos da partícula.
   - `newton(self,f_x,f_y,dt)` – : aplica a segunda lei de Newton para atualizar a velocidade e a posição da partícula com base nas forças (fx, fy) aplicadas e no intervalo de tempo `dt`
 
+  ## Equações
+
+  $a_x=f_x/m$
+
+  $a_y=f_y/m$
+
+  $v_x=v_{0x}+a_x t$ 
+
+  $v_y=v_{0y}+a_y t$
+
+  $y=y_{0}+v_{0y} t+\frac{g}{2} t^2$
+
+   $x=x_{0}+v_{0x} t+\frac{g}{2} t^2$
+
+   Considerando $(f_x,f_y)=(0,-9.8)$ e massa ($m=1$ $kg$) obtêm-se o movimento parabólico com $(a_x,a_y)=(0,-9.8)$ $m/s^2$.
+
 ### ⚙️ Funcionalidades
 
-- Calcula as posições ao longo da trajetória até cair no solo
+- Calcula as posições ao longo da trajetória até atinger no solo
+- 
 - Geração de gráficos da trajetória
 - Fácil modificação de parâmetros físicos (Posição, força, massa, etc.)
 
