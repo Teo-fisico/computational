@@ -139,4 +139,4 @@ Oa resultados mostrados foram desenvolvidos usando 3 camadas, com funções de a
 
 ![implenede](./image3/deriva_melhorada.png)
 
-As figuras apresentadas têm uma melhor aproximação dentro da tolerância considerada e taxa de aprendizado. Além disso, ter muito cuidado com funções não contínuas num determinado domínio: tangente e outros.   
+As figuras apresentadas têm uma melhor aproximação dentro da tolerância considerada e taxa de aprendizado. Além disso, considerar um domínio onde a função é contínua: ex. tangente e outros.   

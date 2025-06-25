@@ -29,6 +29,7 @@ Este projeto implementa a **simulação do movimento parabólico** utilizando os
    $x=x_{0}+v_{0x} t+\frac{g}{2} t^2$
 
    Considerando $(f_x,f_y)=(0,-9.8)$ e massa ($m=1$ $kg$) obtêm-se o movimento parabólico com $(a_x,a_y)=(0,-9.8)$ $m/s^2$.
+---   
 
 ### ⚙️ Funcionalidades
 
@@ -36,6 +37,7 @@ Este projeto implementa a **simulação do movimento parabólico** utilizando os
 - 
 - Geração de gráficos da trajetória
 - Fácil modificação de parâmetros físicos (Posição, força, massa, etc.)
+___
 
 ### 📉 Resultados
 Usando [ejemplo01.py](ejemplo01.py) e classe [particula.py](particula.py) obtem-se a seguinte figura.  
@@ -43,6 +45,7 @@ Usando [ejemplo01.py](ejemplo01.py) e classe [particula.py](particula.py) obtem-
 ![Descrição parabolico](Simulação.png)
 
  > Trajetória oblíquo de um corpo
+--- 
 
 ### 🚀 Objetivo educacional
 

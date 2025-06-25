@@ -39,17 +39,17 @@ A função utilizada para teste é uma parábola com mínimo conhecido. O algori
 Os seguintes gráficos foram gerados e estão disponíveis na pasta `image1/`:
 
 - **Gráfico de convergência questão 1**  
-  Mostra como o valor de `x` se aproxima do mínimo ao longo das iterações com taxa de aprendizado $\alpha=0.2$.  
+  Mostra como o valor de `x` se aproxima do mínimo ao longo das iterações com taxa de aprendizado $\alpha=0,2$.  
   ![Gráfico de convergência](./image1/alfame.png)
 
 
-  Além disso, mostra o caminho percorrido pelo algoritmo sobre a curva da função para uma taxa de aprendizado maior ($\alpha=0.9$) tem uma convergência oscilante.  
+  Além disso, mostra o caminho percorrido pelo algoritmo sobre a curva da função para uma taxa de aprendizado maior ($\alpha=0,9$) e tem uma convergência oscilante.  
   ![Gráfico da descida](./image1/alfama.png)
 
 ---
 - **Gráfico de convergência de questão 2**
 
-Na seguinte figura mostra-se a convergência devagar, para um ponto inicial cerca do máximo global e uma taxa $\alpha=0,1$.
+Na seguinte figura mostra-se a convergência lenta, para um ponto inicial perto do máximo global e uma taxa $\alpha=0,1$.
 ![Gráfico de convergência](./image1/q21.png)
 
 Para o mesmo ponto inicial e uma taxa de aprendizado maior não converge e dá como resultado errado (ao máximo global). 
@@ -60,7 +60,7 @@ Para o mesmo ponto inicial e uma taxa de aprendizado maior não converge e dá c
 Para um ponto inicial $x=2$ e uma taxa de aprendizado $\alpha=0,1$ a convergência é rápida.
 ![Gráfico de convergência](./image1/q21c.png)
 
-Na mesma concição inical e taxa maior converge no mínimo do lado oposto. 
+Na mesma concição inical e uma taxa maior converge rápidamente no mínimo do lado oposto. 
 
 ![Gráfico de convergência](./image1/q21d.png)
 
