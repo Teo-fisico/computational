@@ -1,6 +1,7 @@
 
 # 📘 PF010-Física Computacional 
 ### Docente: Prof. Dr. Gerson J. Ferreira
+### Discente: Teófanes Berrocal Serna
 
 ## 🎯 Objetivo
 
